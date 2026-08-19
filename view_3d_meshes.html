@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Canine Mesh Viewer (BARC vs TripoSR)</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #0f141c; color: #e6edf3; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 320px; background: #161b22; border-right: 1px solid #30363d; padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+        #viewer { flex: 1; position: relative; background: #0d1117; }
+        h1 { font-size: 1.1rem; color: #58a6ff; margin-bottom: 5px; }
+        .card { background: #21262d; border: 1px solid #30363d; border-radius: 6px; padding: 12px; font-size: 0.85rem; }
+        .card h2 { font-size: 0.9rem; margin-bottom: 8px; color: #3fb950; }
+        .control-group { display: flex; flex-direction: column; gap: 6px; }
+        label { font-size: 0.8rem; color: #8b949e; }
+        select, input, button { background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; width: 100%; outline: none; }
+        select:focus, input:focus { border-color: #58a6ff; }
+        button { background: #238636; border-color: #2ea043; color: #fff; cursor: pointer; font-weight: 600; margin-top: 5px; transition: 0.2s; }
+        button:hover { background: #2ea043; }
+        .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+        .badge-barc { background: #1f6feb33; color: #58a6ff; border: 1px solid #1f6feb; }
+        .badge-triposr { background: #d2992233; color: #f2cc60; border: 1px solid #d29922; }
+        #mesh-info { font-size: 0.8rem; line-height: 1.5; color: #8b949e; }
+        #mesh-info strong { color: #f0f6fc; }
+        #drop-zone { border: 2px dashed #30363d; border-radius: 6px; padding: 20px; text-align: center; font-size: 0.8rem; color: #8b949e; cursor: pointer; transition: 0.2s; }
+        #drop-zone:hover { border-color: #58a6ff; color: #58a6ff; }
+    </style>
+    <!-- Three.js + OBJLoader + OrbitControls from cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div>
+            <h1>🐕 3D Canine Mesh Viewer</h1>
+            <p style="font-size: 0.75rem; color: #8b949e;">Interactive 3D Inspector for BARC & TripoSR</p>
+        </div>
+
+        <div class="card">
+            <h2>Select 3D Mesh (.obj)</h2>
+            <div class="control-group">
+                <label>Choose Model Type:</label>
+                <select id="model-type">
+                    <option value="barc">BARC 3D (Parametric SMAL - 3,889 Verts)</option>
+                    <option value="triposr">TripoSR (Implicit NeRF - ~10k Verts)</option>
+                </select>
+            </div>
+            <div class="control-group" style="margin-top: 10px;">
+                <label>Select Sample Dog:</label>
+                <select id="sample-select">
+                    <option value="dog_01">Golden Retriever (dog_show_00000)</option>
+                    <option value="dog_02">Golden Retriever (dog_show_00001)</option>
+                    <option value="dog_03">Golden Retriever (dog_show_00002)</option>
+                    <option value="dog_04">Labrador Retriever (lab_show_00000)</option>
+                    <option value="dog_05">Labrador Retriever (lab_show_00001)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="drop-zone" onclick="document.getElementById('file-input').click()">
+            📂 Drag & Drop any .obj file here<br><span style="font-size:0.7rem;">or click to browse from disk</span>
+            <input type="file" id="file-input" accept=".obj" style="display:none">
+        </div>
+
+        <div class="card">
+            <h2>Mesh Display Settings</h2>
+            <div class="control-group">
+                <label><input type="checkbox" id="wireframe-toggle" style="width:auto; vertical-align:middle; margin-right:6px;"> Wireframe Mode</label>
+                <label><input type="checkbox" id="auto-rotate-toggle" style="width:auto; vertical-align:middle; margin-right:6px;" checked> Auto-Rotate</label>
+            </div>
+            <div class="control-group" style="margin-top: 8px;">
+                <label>Mesh Color:</label>
+                <input type="color" id="mesh-color" value="#c89658">
+            </div>
+        </div>
+
+        <div class="card" id="mesh-info">
+            <h2>Mesh Analytics</h2>
+            <div>Type: <span id="info-type" class="badge badge-barc">BARC 3D</span></div>
+            <div>Vertices: <strong id="info-verts">3,889</strong></div>
+            <div>Faces: <strong id="info-faces">7,774</strong></div>
+            <div>Chest Girth: <strong id="info-girth">86.5 cm</strong></div>
+            <div>Rec. Size: <strong id="info-size" style="color:#3fb950;">Size L</strong></div>
+        </div>
+    </div>
+
+    <div id="viewer"></div>
+
+    <script>
+        const container = document.getElementById('viewer');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x0d1117);
+
+        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+        camera.position.set(0, 1.5, 4);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 2.0;
+
+        // Grid & Lights
+        const grid = new THREE.GridHelper(10, 20, 0x30363d, 0x21262d);
+        grid.position.y = -0.5;
+        scene.add(grid);
+
+        const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.2);
+        hemiLight.position.set(0, 20, 0);
+        scene.add(hemiLight);
+
+        const dirLight = new THREE.DirectionalLight(0xffffff, 1.0);
+        dirLight.position.set(3, 10, 10);
+        scene.add(dirLight);
+
+        let currentMesh = null;
+        const objLoader = new THREE.OBJLoader();
+
+        function loadOBJContent(text, name="Mesh") {
+            if (currentMesh) scene.remove(currentMesh);
+            try {
+                const obj = objLoader.parse(text);
+                const colorHex = document.getElementById('mesh-color').value;
+                const isWire = document.getElementById('wireframe-toggle').checked;
+                
+                let numVerts = 0;
+                let numFaces = 0;
+
+                obj.traverse(child => {
+                    if (child.isMesh) {
+                        child.material = new THREE.MeshStandardMaterial({
+                            color: parseInt(colorHex.replace('#', '0x')),
+                            roughness: 0.5,
+                            metalness: 0.1,
+                            wireframe: isWire,
+                            side: THREE.DoubleSide
+                        });
+                        if (child.geometry) {
+                            numVerts += child.geometry.attributes.position ? child.geometry.attributes.position.count : 0;
+                            numFaces += child.geometry.index ? child.geometry.index.count / 3 : numVerts / 3;
+                        }
+                    }
+                });
+
+                // Center & Scale
+                const box = new THREE.Box3().setFromObject(obj);
+                const size = box.getSize(new THREE.Vector3());
+                const center = box.getCenter(new THREE.Vector3());
+                obj.position.sub(center);
+                const maxDim = Math.max(size.x, size.y, size.z);
+                if (maxDim > 0) {
+                    obj.scale.multiplyScalar(2.0 / maxDim);
+                }
+
+                currentMesh = obj;
+                scene.add(currentMesh);
+
+                document.getElementById('info-verts').innerText = numVerts.toLocaleString();
+                document.getElementById('info-faces').innerText = Math.round(numFaces).toLocaleString();
+            } catch (err) {
+                alert('Error loading OBJ file: ' + err.message);
+            }
+        }
+
+        // Handle File Input / Drop
+        document.getElementById('file-input').addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = evt => loadOBJContent(evt.target.result, file.name);
+                reader.readAsText(file);
+            }
+        });
+
+        const dropZone = document.getElementById('drop-zone');
+        dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.style.borderColor = '#3fb950'; });
+        dropZone.addEventListener('dragleave', () => { dropZone.style.borderColor = '#30363d'; });
+        dropZone.addEventListener('drop', e => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#30363d';
+            const file = e.dataTransfer.files[0];
+            if (file && file.name.endsWith('.obj')) {
+                const reader = new FileReader();
+                reader.onload = evt => loadOBJContent(evt.target.result, file.name);
+                reader.readAsText(file);
+            }
+        });
+
+        // Controls
+        document.getElementById('wireframe-toggle').addEventListener('change', e => {
+            if (currentMesh) {
+                currentMesh.traverse(c => { if (c.isMesh) c.material.wireframe = e.target.checked; });
+            }
+        });
+
+        document.getElementById('auto-rotate-toggle').addEventListener('change', e => {
+            controls.autoRotate = e.target.checked;
+        });
+
+        document.getElementById('mesh-color').addEventListener('input', e => {
+            if (currentMesh) {
+                currentMesh.traverse(c => { if (c.isMesh) c.material.color.set(e.target.value); });
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>
