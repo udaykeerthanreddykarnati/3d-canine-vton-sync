@@ -1,0 +1,130 @@
+index,breed,source_image,output_image,garment_name,chest_girth_cm,back_length_cm,withers_height_cm,recommended_size,physical_fit_ratio,fit_verdict,processing_time_sec
+1,golden,00001.jpg,00001_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,83.9,61.8,58.5,L,0.976,Good Fit,1.61
+2,golden,00002.jpg,00002_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,102.9,56.7,78.7,XL,1.039,Good Fit,1.19
+3,golden,00003.jpg,00003_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.2,47.2,75.4,XL,0.941,Good Fit,1.12
+4,golden,00004.jpg,00004_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,80.0,44.9,68.4,M,1.067,Good Fit,1.13
+5,golden,00005.jpg,00005_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.4,44.9,69.1,L,1.005,Good Fit,1.14
+6,golden,00006.jpg,00006_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,80.8,82.9,57.0,L,0.94,Loose,1.23
+7,golden,00007.jpg,00007_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,82.9,41.5,74.2,L,0.964,Good Fit,1.13
+8,golden,00008.jpg,00008_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.3,47.8,47.5,L,1.062,Tight,1.13
+9,golden,00009.jpg,00009_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,97.4,42.3,81.7,XL,0.984,Good Fit,1.17
+10,golden,00010.jpg,00010_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,89.5,52.9,66.6,L,1.041,Good Fit,1.14
+11,golden,00011.jpg,00011_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,119.3,50.9,69.8,XL,1.205,Tight,1.21
+12,golden,00012.jpg,00012_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,84.7,58.8,75.3,L,0.985,Good Fit,1.19
+13,golden,00013.jpg,00013_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,89.7,45.7,67.7,L,1.043,Good Fit,1.15
+14,golden,00014.jpg,00014_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,88.2,56.7,76.9,L,1.026,Good Fit,1.15
+15,golden,00015.jpg,00015_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,155.4,46.2,66.0,XL,1.57,Tight,1.1
+16,golden,00016.jpg,00016_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,77.9,64.8,66.4,M,1.039,Good Fit,1.15
+17,golden,00017.jpg,00017_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,157.2,45.5,67.1,XL,1.588,Tight,1.12
+18,golden,00018.jpg,00018_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.8,59.8,78.3,XL,0.978,Good Fit,1.11
+19,golden,00019.jpg,00019_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,83.5,52.3,71.8,L,0.971,Good Fit,1.21
+20,golden,00020.jpg,00020_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,105.1,45.1,68.2,XL,1.062,Good Fit,1.15
+21,golden,00021.jpg,00021_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.2,47.6,68.2,L,0.991,Good Fit,1.15
+22,golden,00022.jpg,00022_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,83.6,52.9,59.1,L,0.972,Good Fit,1.16
+23,golden,00023.jpg,00023_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.9,87.8,66.0,L,0.999,Good Fit,1.12
+24,golden,00024.jpg,00024_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.4,48.2,68.2,XL,0.943,Good Fit,1.11
+25,golden,00025.jpg,00025_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.3,123.9,64.3,XL,0.942,Good Fit,1.12
+26,golden,00026.jpg,00026_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.5,50.4,71.0,L,1.064,Tight,1.12
+27,golden,00027.jpg,00027_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.4,55.1,59.4,L,1.005,Good Fit,1.11
+28,golden,00028.jpg,00028_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,88.3,42.7,77.2,L,1.027,Good Fit,1.15
+29,golden,00029.jpg,00029_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,148.2,35.3,57.3,XL,1.497,Tight,1.14
+30,golden,00030.jpg,00030_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,95.9,63.2,83.3,XL,0.969,Good Fit,1.11
+31,golden,00031.jpg,00031_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,90.2,37.9,60.4,L,1.049,Good Fit,1.11
+32,golden,00032.jpg,00032_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,82.8,23.7,59.4,L,0.963,Good Fit,1.13
+33,golden,00033.jpg,00033_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,104.3,58.8,80.9,XL,1.054,Good Fit,1.11
+34,golden,00034.jpg,00034_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.3,59.6,80.0,XL,0.942,Good Fit,1.11
+35,golden,00035.jpg,00035_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,100.0,111.8,85.9,XL,1.01,Good Fit,1.12
+36,golden,00036.jpg,00036_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,134.9,112.0,85.8,XL,1.363,Tight,1.12
+37,golden,00037.jpg,00037_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.7,19.9,60.5,XL,0.946,Good Fit,1.12
+38,golden,00038.jpg,00038_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.3,60.0,74.4,L,1.003,Good Fit,1.12
+39,golden,00039.jpg,00039_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.4,49.1,69.4,L,1.016,Good Fit,1.13
+40,golden,00040.jpg,00040_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,100.0,61.8,77.9,XL,1.01,Good Fit,1.12
+41,golden,00041.jpg,00041_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,95.3,139.9,87.9,XL,0.963,Good Fit,1.12
+42,golden,00042.jpg,00042_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,81.8,53.3,62.4,L,0.951,Good Fit,1.11
+43,golden,00043.jpg,00043_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,119.0,48.9,78.6,XL,1.202,Tight,1.12
+44,golden,00044.jpg,00044_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,82.3,54.2,73.3,L,0.957,Good Fit,1.12
+45,golden,00045.jpg,00045_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,88.9,135.7,90.6,L,1.034,Good Fit,1.12
+46,golden,00046.jpg,00046_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,118.5,66.7,69.4,XL,1.197,Tight,1.12
+47,golden,00047.jpg,00047_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,71.5,42.7,59.7,M,0.953,Good Fit,1.12
+48,golden,00048.jpg,00048_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,100.3,55.9,83.0,XL,1.013,Good Fit,1.13
+49,golden,00049.jpg,00049_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,116.7,56.3,74.7,XL,1.179,Tight,1.13
+50,golden,00050.jpg,00050_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,90.7,52.9,72.1,L,1.055,Good Fit,1.12
+51,golden,00051.jpg,00051_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,95.4,49.5,61.6,XL,0.964,Good Fit,1.11
+52,golden,00052.jpg,00052_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.7,48.3,70.0,XL,0.977,Good Fit,1.11
+53,golden,00053.jpg,00053_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.1,109.0,68.4,L,1.013,Good Fit,1.12
+54,golden,00054.jpg,00054_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,99.1,52.7,72.6,XL,1.001,Good Fit,1.11
+55,golden,00055.jpg,00055_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.3,23.9,79.0,L,1.062,Tight,1.12
+56,golden,00056.jpg,00056_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,102.4,57.5,80.0,XL,1.034,Good Fit,1.19
+57,golden,00057.jpg,00057_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,81.8,46.1,62.1,L,0.951,Good Fit,1.12
+58,golden,00058.jpg,00058_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,65.5,56.7,76.8,S,1.048,Good Fit,1.12
+59,golden,00059.jpg,00059_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.6,42.4,71.2,L,1.019,Good Fit,1.11
+60,golden,00060.jpg,00060_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.0,56.6,76.2,L,0.988,Good Fit,1.11
+61,golden,00061.jpg,00061_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.8,56.1,84.7,L,1.067,Tight,1.12
+62,golden,00062.jpg,00062_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,100.5,61.8,84.4,XL,1.015,Good Fit,1.12
+63,golden,00063.jpg,00063_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,94.1,21.1,78.4,XL,0.951,Good Fit,1.11
+64,labrador,00001.jpg,00001_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.8,103.0,75.8,L,0.998,Good Fit,1.12
+65,labrador,00002.jpg,00002_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.8,51.5,67.9,XL,0.978,Good Fit,1.11
+66,labrador,00003.jpg,00003_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,97.9,54.3,64.1,XL,0.989,Good Fit,1.12
+67,labrador,00004.jpg,00004_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.8,52.7,75.8,L,1.067,Tight,1.11
+68,labrador,00005.jpg,00005_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,76.7,47.6,68.4,M,1.023,Good Fit,1.13
+69,labrador,00006.jpg,00006_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,88.8,7.8,60.8,L,1.033,Good Fit,1.11
+70,labrador,00007.jpg,00007_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,80.8,52.3,69.1,L,0.94,Loose,1.12
+71,labrador,00008.jpg,00008_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,78.7,21.2,89.4,M,1.049,Good Fit,1.12
+72,labrador,00009.jpg,00009_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,92.6,42.5,66.8,XL,0.935,Good Fit,1.12
+73,labrador,00010.jpg,00010_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,134.5,51.0,68.2,XL,1.359,Tight,1.13
+74,labrador,00011.jpg,00011_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,99.0,61.2,80.3,XL,1.0,Good Fit,1.11
+75,labrador,00012.jpg,00012_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,94.6,59.4,79.9,XL,0.956,Good Fit,1.1
+76,labrador,00013.jpg,00013_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.4,39.6,51.1,L,1.063,Tight,1.12
+77,labrador,00014.jpg,00014_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,89.7,49.6,81.1,L,1.043,Good Fit,1.12
+78,labrador,00015.jpg,00015_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,113.0,50.4,71.4,XL,1.141,Tight,1.12
+79,labrador,00016.jpg,00016_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.5,58.5,76.9,XL,0.975,Good Fit,1.11
+80,labrador,00017.jpg,00017_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,97.2,60.1,80.4,XL,0.982,Good Fit,1.12
+81,labrador,00018.jpg,00018_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,94.9,62.0,80.2,XL,0.959,Good Fit,1.11
+82,labrador,00019.jpg,00019_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.8,39.5,70.6,XL,0.978,Good Fit,1.11
+83,labrador,00020.jpg,00020_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.3,55.5,68.4,L,1.003,Good Fit,1.12
+84,labrador,00021.jpg,00021_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,92.9,18.4,68.3,XL,0.938,Good Fit,1.11
+85,labrador,00022.jpg,00022_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.8,48.4,69.8,L,0.998,Good Fit,1.12
+86,labrador,00023.jpg,00023_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,89.7,128.9,63.7,L,1.043,Good Fit,1.27
+87,labrador,00024.jpg,00024_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,90.7,55.2,73.1,L,1.055,Good Fit,1.17
+88,labrador,00025.jpg,00025_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,101.2,40.0,69.1,XL,1.022,Good Fit,1.31
+89,labrador,00026.jpg,00026_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.5,53.6,72.3,L,1.064,Tight,1.4
+90,labrador,00027.jpg,00027_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.5,51.0,72.4,L,1.006,Good Fit,1.19
+91,labrador,00028.jpg,00028_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.5,53.9,79.5,L,0.994,Good Fit,1.23
+92,labrador,00029.jpg,00029_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.8,53.0,71.2,XL,0.978,Good Fit,1.13
+93,labrador,00030.jpg,00030_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,107.4,36.1,62.3,XL,1.085,Tight,1.12
+94,labrador,00031.jpg,00031_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.7,60.9,81.0,L,1.02,Good Fit,1.11
+95,labrador,00032.jpg,00032_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,80.4,53.9,59.5,M,1.072,Good Fit,1.11
+96,labrador,00033.jpg,00033_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.7,58.3,78.9,XL,0.946,Good Fit,1.11
+97,labrador,00034.jpg,00034_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.9,64.7,74.5,L,1.01,Good Fit,1.15
+98,labrador,00035.jpg,00035_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.9,59.8,81.9,L,1.01,Good Fit,1.12
+99,labrador,00036.jpg,00036_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,119.4,53.7,53.5,XL,1.206,Tight,1.12
+100,labrador,00037.jpg,00037_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,81.2,41.0,64.0,L,0.944,Good Fit,1.29
+101,labrador,00038.jpg,00038_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,92.5,52.6,81.2,L,1.076,Tight,1.24
+102,labrador,00039.jpg,00039_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,114.3,62.5,69.1,XL,1.155,Tight,1.2
+103,labrador,00040.jpg,00040_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,137.7,53.5,64.7,XL,1.391,Tight,1.12
+104,labrador,00041.jpg,00041_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,93.3,49.7,70.2,XL,0.942,Good Fit,1.12
+105,labrador,00042.jpg,00042_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,94.3,57.8,72.1,XL,0.953,Good Fit,1.12
+106,labrador,00043.jpg,00043_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.5,44.9,66.9,L,1.017,Good Fit,1.13
+107,labrador,00044.jpg,00044_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.2,50.6,70.4,L,1.002,Good Fit,1.11
+108,labrador,00045.jpg,00045_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,89.4,59.5,74.2,L,1.04,Good Fit,1.12
+109,labrador,00046.jpg,00046_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,88.2,56.7,72.7,L,1.026,Good Fit,1.12
+110,labrador,00047.jpg,00047_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,152.2,57.6,78.6,XL,1.537,Tight,1.11
+111,labrador,00048.jpg,00048_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,99.6,45.4,65.3,XL,1.006,Good Fit,1.12
+112,labrador,00049.jpg,00049_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,98.3,59.8,79.8,XL,0.993,Good Fit,1.11
+113,labrador,00050.jpg,00050_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,103.1,51.7,68.5,XL,1.041,Good Fit,1.12
+114,labrador,00051.jpg,00051_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,116.7,65.2,71.6,XL,1.179,Tight,1.11
+115,labrador,00052.jpg,00052_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.2,52.6,68.8,L,1.014,Good Fit,1.12
+116,labrador,00053.jpg,00053_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,86.5,61.0,79.5,L,1.006,Good Fit,1.12
+117,labrador,00054.jpg,00054_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,95.7,23.8,76.3,XL,0.967,Good Fit,1.12
+118,labrador,00055.jpg,00055_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,95.0,135.7,77.7,XL,0.96,Good Fit,1.12
+119,labrador,00056.jpg,00056_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.6,74.2,65.2,L,1.065,Tight,1.11
+120,labrador,00057.jpg,00057_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,96.0,33.2,66.0,XL,0.97,Good Fit,1.12
+121,labrador,00058.jpg,00058_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,87.6,40.0,71.6,L,1.019,Good Fit,1.13
+122,labrador,00059.jpg,00059_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,101.9,52.4,73.1,XL,1.029,Good Fit,1.12
+123,labrador,00060.jpg,00060_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,99.7,135.4,77.9,XL,1.007,Good Fit,1.11
+124,labrador,00061.jpg,00061_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,81.2,43.9,61.6,L,0.944,Good Fit,1.13
+125,labrador,00062.jpg,00062_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,92.0,51.3,71.7,L,1.07,Tight,1.11
+126,labrador,00063.jpg,00063_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,92.4,60.5,73.1,L,1.074,Tight,1.12
+127,labrador,00064.jpg,00064_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,91.8,50.6,65.0,L,1.067,Tight,1.13
+128,labrador,00065.jpg,00065_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,90.1,55.6,75.5,L,1.048,Good Fit,1.12
+129,labrador,00066.jpg,00066_locked_yellow_tryon.png,Ruffwear Sun Shower Yellow Raincoat,85.8,58.4,77.2,L,0.998,Good Fit,1.12
